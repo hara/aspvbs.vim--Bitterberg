@@ -87,7 +87,7 @@ function! <SID>GetCurrentIndent(prev_lnum)
 
   let open_tags =             '^\c\s*\<\('
   let open_tags = open_tags . 'if\|elseif\|else\|while\|for\|do\|with\|case\|'
-  let open_tags = open_tags . '\(private\s\+\|public\s\+\|\)\(class\|sub\|function\|property\)'
+  let open_tags = open_tags . '\(private\s\+\|public\s\+\|\)\(default\s\+\|\)\(class\|sub\|function\|property\)'
   let open_tags = open_tags . '\)\>'
 
   if prev_line =~ open_tags
